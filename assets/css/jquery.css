@@ -1,4 +1,4 @@
-/* body {
+body {
   display: none;
 }
 
@@ -27,4 +27,4 @@
 ._isActiveSlideFadeRight {
   opacity: 1;
   transform: translateX(0);
-} */
+}

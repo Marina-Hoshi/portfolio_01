@@ -1,9 +1,10 @@
+:heavy_check_mark:01
 <!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio_02</title>
+    <title>Portfolio_01</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/jquery.css">
@@ -13,20 +14,15 @@
   <body>
     <div class="l-wrapper">
       <header class="l-header">
-        <div class="l-header__top">
+        <div class="l-header__keyvisual">
+          <div class="c-header__overlay"></div>
+          <img class="c-header__img" src="assets/img/keyVisual.jpg" alt=キービジュアル>
+          <p class="c-header__subTitle">CHEESE CAKE</p>
         </div>
-        <div class="l-header__middle">
-          <!-- <div class="l-header__keyvisual">
-            <div class="c-header__overlay"></div>
-            <img class="c-header__img" src="assets/img/keyVisual.jpg" alt=キービジュアル>
-            <p class="c-header__subTitle">CHEESE CAKE</p>
+        <div class="l-header__inner">
+          <div class="c-heading">
+            <h1 class="c-header__title">TONARI NO <br>CHEESE</h1>
           </div>
-          <div class="l-header__inner">
-            <div class="c-heading">
-              <h1 class="c-header__title">studio<br>M</h1>
-            </div> -->
-        </div>
-        <div class="l-header__bottom">
           <nav class="p-header__nav">
             <ul class="p-nav__menu">
               <li class="c-nav__menu"><a href="#">ABOUT</a></li>
@@ -46,59 +42,206 @@
       </header>
       <main class="l-main">
         <section class="l-main__about">
-          <div class="l-main__aboutLeft">ABOUT</div>
-          <div class="l-main__aboutRight"></div>
+          <div class="l-main__aboutTop">
+            <h2 class="c-aboutTop__title _scrollFadeIn">日常に寄り添う、<br>ちょっぴり贅沢なチーズケーキ</h2>
+          </div>
+          <div class="l-main__aboutMiddle">
+            <div class="p-about__content">
+              <div class="p-about__img _scrollSlideFadeLeft"><!--左画像-->
+                <div class="c-about__overlay"></div>
+                <img class=c-about__img src="assets/img/creamCheese.jpg" alt=クリームチーズ></img>
+              </div>
+              <div class="p-about__box _scrollSlideFadeLeft"><!--右説明文-->
+                <div class="p-about__inner">
+                  <h3 class=p-about__title>地元の特選チーズを使用</h3>
+                  <p class="p-about__text">
+                    地元の特選チーズを厳選し、富士山麓の牧場で大切に育てられたチーズを贅沢に使用しています。口に入れた瞬間、ふわっと広がるチーズの豊かな風味と味わいが当店の自慢です。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-about__content">
+              <div class="p-about__box _scrollSlideFadeRight"><!-- 左説明文-->
+                <div class="p-about__inner">
+                  <h3 class=p-about__title>素材にこだわった安心のチーズケーキ</h3>
+                  <p class="p-about__text">
+                    シンプルな材料で贅沢な味わいを提供する当店のチーズケーキは、安全性にもこだわっています。余計な添加物や合成香料は一切使用せず、安心してお召し上がりいただけます。
+                  </p>
+                </div>
+              </div>
+              <div class="p-about__img _scrollSlideFadeRight"><!--右画像-->
+                <div class="c-about__overlay"></div>
+                <img class=c-about__img src="assets/img/mix_material.jpeg" alt=調理></img>
+              </div>
+            </div>
+            <div class="p-about__content">
+              <div class="p-about__img _scrollSlideFadeLeft"><!--左画像-->
+                <div class="c-about__overlay"></div>
+                <img class=c-about__img src="assets/img/cut_cheesecake.jpeg" alt=ケーキ></img>
+              </div>
+              <div class="p-about__box _scrollSlideFadeLeft"><!--右説明文-->
+                <div class="p-about__inner">
+                  <h3 class=p-about__title>至福の食感を追求</h3>
+                  <p class="p-about__text">
+                    コーヒーや紅茶にもぴったりな口溶けのよい絶妙な食感を目指しました。焼き加減や材料の配合には細心の注意を払い、ひとつひとつ丁寧に仕上げています。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="l-main__aboutBottom">
+            <div class="l-main__picture _scrollFadeIn">
+              <div class="c-main__overlay"></div>
+              <img class="c-main__picture" src="assets/img/takeCake.JPG" alt="ケーキ" >
+            </div>
+          </div>
         </section>
-        <section class="l-main__class">
-          <div class="l-main__aboutLeft">PILATES CLASS</div>
-          <div class="l-main__aboutRight"></div>
+        <section class="l-main__lineup">
+          <div class="l-main__lineupTop">
+            <div class="c-lineupTop__title">
+              <h3 class="c-lineupTop__heading _scrollFadeIn">LINEUP</h>
+            </div>
+          </div>
+          <div class="l-main__lineupMiddle">
+            <div class="p-lineup__container">
+              <div class="p-lineup__img _scrollFadeIn">
+                <div class="c-lineup__overlay"></div>
+                <img class="c-lineup__img" src="assets/img/lemon_cheesecake2.jpeg" alt="商品">
+                <div class="p-lineup__product">
+                  <p class="c-lineup__product">LEMON<br>CHEESE CAKE</p>
+                  <p class="c-lineup__price">￥680 <span class="c-lineup__price--small">(税込)</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="p-lineup__button _scrollFadeIn">
+              <a href="#"><p class="c-button">SOLD OUT</p></a>
+            </div>
+            <div class="p-lineup__description _scrollFadeIn">
+              <p class="p-lineup__text">季節限定、レモンチーズケーキが新登場しました。<br>爽やかな風味が楽しめる、夏にぴったりの美味しさです。</p>
+            </div>
+          </div>
+          <div class="l-main__lineupBottom">
+            <ul class="p-lineup__box _scrollFadeIn">
+              <li class="c-lineup__list">
+                <div class="c-lineup__item">原材料</div>
+                <div class="c-lineup__content">クリームチーズ、生クリーム、卵、てんさい糖、バター、レモン</div>
+              </li>
+              <li class="c-lineup__list">
+                <div class="c-lineup__item">内容量</div>
+                <div class="c-lineup__content">120g</div>
+              </li>
+              <li class="c-lineup__list">
+                <div class="c-lineup__item">賞味期限</div>
+                <div class="c-lineup__content">冷蔵:5日 冷凍:3週間</div>
+              </li>
+              <li class="c-lineup__list">
+                <div class="c-lineup__item">保存方法</div>
+                <div class="c-lineup__content">冷蔵庫にて保管して下さい。</div>
+              </li>
+            </ul>
+          </div>
         </section>
-        <section class="l-main__workshop">
-          <div class="l-main__aboutLeft">WORKSHOP</div>
-          <div class="l-main__aboutRight"></div>
+        <section class="l-main__shop">
+          <div class="p-main__shopTop">
+            <h3 class="c-shop__heading _scrollFadeIn">SHOP</h3>
+            <h4 class="c-shop__description _scrollFadeIn">TONARI NO CHEESE</h4>
+          </div>
+          <div class="p-main__shopBottom">
+            <ul class="p-shop__information _scrollFadeIn">
+              <li class="p-shop__list">
+                <h5 class="c-shop__name">神南本店</h5>
+                <ul class="p-shop__box">
+                  <li class="c-shop__list">
+                    <div class="c-shop__item">住所</div>
+                    <div class="c-shop__content">〒123-4567<br>東京都渋谷区神南1-2-3<br>グランドビル1F</div>
+                  </li>
+                  <li class="c-shop__list">
+                    <div class="c-shop__item">電話番号</div>
+                    <div class="c-shop__content"><a href="#">03-3456-7890</a></div>
+                  </li>
+                  <li class="c-shop__list">
+                    <div class="c-shop__item">営業時間</div>
+                    <div class="c-shop__content">11:00-19:30</div>
+                  </li>
+                </ul>
+              </li>
+              <li class="p-shop__list">
+                <h5 class="c-shop__name">横浜店</h5>
+                <ul class="p-shop__box">
+                  <li class="c-shop__list">
+                    <div class="c-shop__item">住所</div>
+                    <div class="c-shop__content">〒678-9012<br>神奈川県横浜市都筑区南5-6-7<br>サンシャインビル3F</div>
+                  </li>
+                  <li class="c-shop__list">
+                    <div class="c-shop__item">電話番号</div>
+                    <div class="c-shop__content"><a href="#">045-6789-0123</a></div>
+                  </li>
+                  <li class="c-shop__list">
+                    <div class="c-shop__item">営業時間</div>
+                    <div class="c-shop__content">10:00-21:00</div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </section>
-        <section class="l-main__blog">
-        </section>
-        <section class="l-main__booking">
-        </section>
-        <section class="l-main__contact">
-        </section>
-        <section class="l-main__sns">
+        <section class="l-main__news">
+          <div class="l-main__newsTop">
+            <div class="c-newsTop__title">
+              <h3 class="c-newsTop__heading _scrollFadeIn">NEWS</h3>
+            </div>
+          </div>
+          <div class="l-main__newsBottom">
+            <ul class="p-news__information _scrollFadeIn">
+              <li class="p-news__list">
+                <div class="c-news__date">2024/04/01</div>
+                <div class="c-news__tag">
+                  <div class="c-news__button">お知らせ</div>
+                </div>
+                <div class="c-news__content"><a href="#">商品価格改定のお知らせ</a></div>
+              </li>
+              <li class="p-news__list">
+                <div class="c-news__date">2024/03/15</div>
+                <div class="c-news__tag">
+                  <div class="c-news__button">店舗情報</div>
+                </div>
+                <div class="c-news__content"><a href="#">3月29日(金)本店は17時に閉店いたします。</a></div>
+              </li>
+              <li class="p-news__list">
+                <div class="c-news__date">2024/02/21</div>
+                <div class="c-news__tag">
+                  <div class="c-news__button">お知らせ</div>
+                </div>
+                <div class="c-news__content"><a href="#">WEBサイト&オンラインショップをリニューアルしました。</a></div>
+              </li>
+            </ul>
+            <a href="#">
+              <div class="p-news__button _scrollFadeIn">
+                <p class="c-more__button">VIEW ALL</p>
+              </div>
+            </a>
+          </div>
         </section>
       </main>
       <footer class="l-footer">
-        <div class="l-footer__top">
-        </div>
-        <div class="l-footer__bottom">
-          <div class="l-footer__left">
-            <div class="l-footer__leftTop"></div>
-            <div class="l-footer__leftMiddle"></div>
-            <div class="l-footer__leftBottom">
-              <p class="c-footer__copyright">&copy; 2018 Studio M</p>
-            </div>
+        <div class="l-footer__container">
+          <div class="l-footer__containerTop">
+            <p class="c-footer__name"><a href="#">MARINA KITCHEN</a></p>
           </div>
-          <div class="l-footer__right">
+          <div class="l-footer__containerMiddle">
             <nav>
               <ul class="p-nav__menu">
-                <li class="c-nav__menu"><a href="#">PILATES CLASS</a></li>
-                <li class="c-nav__menu"><a href="#">WORKSHOP</a></li>
-                <li class="c-nav__menu"><a href="#">ABOUT</a></li>
-                <li class="c-nav__menu"><a href="#">BLOG</a></li>
-                <li class="c-nav__menu"><a href="#">BOOKING</a></li>
+                <li class="c-nav__menu"><a href="#">特定商取引法に基づく表記</a></li>
+                <li class="c-nav__menu"><a href="#">プライバシーポリシー</a></li>
+                <li class="c-nav__menu"><a href="#">送料について</a></li>
               </ul>
             </nav>
-            <nav>
-              <div class="p-subNav__menu">
-                <img class="c-subNav__menu" src="" alt="MAP"><a href="#"></a></img>
-                <img class="c-subNav__menu" src="" alt="INSTAGRAM"><a href="#"></a></img>
-              </div>
-            </nav>
+          </div>
+          <div class="l-footer__containerBottom">
+            <p class="c-footer__copyright">&copy; MARINA KITCHEN INC. All RIGHTS RESERVED</p>
           </div>
         </div>
       </footer>
     </div>
-	</body>
+  </body>
 </html>
-
-
-
