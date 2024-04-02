@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-$sp: 320px;
+$sp: 400px;
 
 @mixin sp {
   @media screen and (max-width: ($sp)) {
