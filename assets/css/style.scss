@@ -1,12 +1,30 @@
 @charset "UTF-8";
 
 $sp: 480px;
+$md: 610px;
+$lg: 768px;/* もう少し大きめに変更するか要確認 */
+$xl: 1024px;
 
+@mixin xl {
+  @media screen and (max-width: ($xl)) {
+    @content;
+  }
+}
+@mixin lg {
+  @media screen and (max-width: ($lg)) {
+    @content;
+  }
+}
+@mixin md {
+  @media screen and (max-width: ($md)) {
+    @content;
+  }
+}
 @mixin sp {
   @media screen and (max-width: ($sp)) {
     @content;
   }
-}
+}/* もう少し大きめに変更予定 */
 
 .l-wrapper{
   display: flex;
@@ -168,8 +186,14 @@ $sp: 480px;
         font-weight: 300;
         line-height: 1.5em;
         letter-spacing: 0.1em;
-        @include sp {
-          font-size: 0.8em;
+        @include xl {
+          font-size: 1.2em;
+        }
+        @include lg {
+          font-size: 1.0em;
+        }
+        @include md {
+          font-size: 0.77em;
         }
       }
     }
@@ -242,18 +266,24 @@ $sp: 480px;
             .p-about__title{
               height: 35%;
               margin-bottom: 5%;
-              font-size: 1.5em;
+              font-size: 1.6em;
               font-weight: 300;
               line-height: 1.5em;
               letter-spacing: 0.1em;
-              @include sp {
-                margin-bottom: 3%;
-                font-size: 0.7em;
-              }
+              // @include kl {
+              //   font-size: 1.2em;
+              // }
+              // @include lg {
+              //   font-size: 0.75em;
+              // }
+              // @include sp {
+              //   margin-bottom: 3%;
+              //   font-size: 0.7em;
+              // }
             }
 
             .p-about__text{
-              font-size: 1.1em;
+              font-size: 1.0em;
               line-height: 1.5em;
               letter-spacing: 0.1em;
               @include sp {

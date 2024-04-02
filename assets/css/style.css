@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* もう少し大きめに変更するか要確認 */
+/* もう少し大きめに変更予定 */
 .l-wrapper {
   display: flex;
   flex-direction: column;
@@ -156,9 +158,19 @@
   line-height: 1.5em;
   letter-spacing: 0.1em;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
   .l-wrapper .l-main__aboutTop .c-aboutTop__title {
-    font-size: 0.8em;
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .l-wrapper .l-main__aboutTop .c-aboutTop__title {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 610px) {
+  .l-wrapper .l-main__aboutTop .c-aboutTop__title {
+    font-size: 0.77em;
   }
 }
 .l-wrapper .l-main__aboutMiddle {
@@ -235,19 +247,13 @@
 .l-wrapper .l-main__aboutMiddle .p-about__content .p-about__box .p-about__inner .p-about__title {
   height: 35%;
   margin-bottom: 5%;
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-weight: 300;
   line-height: 1.5em;
   letter-spacing: 0.1em;
 }
-@media screen and (max-width: 480px) {
-  .l-wrapper .l-main__aboutMiddle .p-about__content .p-about__box .p-about__inner .p-about__title {
-    margin-bottom: 3%;
-    font-size: 0.7em;
-  }
-}
 .l-wrapper .l-main__aboutMiddle .p-about__content .p-about__box .p-about__inner .p-about__text {
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.5em;
   letter-spacing: 0.1em;
 }
