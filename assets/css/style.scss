@@ -254,11 +254,13 @@ $xl: 1024px;
             top: 110%;
             left: 55%;
             width: 90%;
-            height: 55%;
           }
 
           .p-about__inner{
             padding: 7%;
+            @include lg {
+              padding: 7%;
+            }
             @include sp {
               padding: 10%;
             }
@@ -270,12 +272,9 @@ $xl: 1024px;
               font-weight: 300;
               line-height: 1.5em;
               letter-spacing: 0.1em;
-              // @include kl {
-              //   font-size: 1.2em;
-              // }
-              // @include lg {
-              //   font-size: 0.75em;
-              // }
+              @include lg {
+                font-size: 1.2em;
+              }
               // @include sp {
               //   margin-bottom: 3%;
               //   font-size: 0.7em;
@@ -283,9 +282,12 @@ $xl: 1024px;
             }
 
             .p-about__text{
-              font-size: 1.0em;
-              line-height: 1.5em;
+              font-size: 1.1em;
+              line-height: 2.0em;
               letter-spacing: 0.1em;
+              @include lg {
+                font-size: 0.85em;
+              }
               @include sp {
                 font-size: 0.5em;
                 line-height: 1.8em;

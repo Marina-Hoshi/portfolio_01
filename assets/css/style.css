@@ -233,11 +233,15 @@
     top: 110%;
     left: 55%;
     width: 90%;
-    height: 55%;
   }
 }
 .l-wrapper .l-main__aboutMiddle .p-about__content .p-about__box .p-about__inner {
   padding: 7%;
+}
+@media screen and (max-width: 768px) {
+  .l-wrapper .l-main__aboutMiddle .p-about__content .p-about__box .p-about__inner {
+    padding: 7%;
+  }
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-main__aboutMiddle .p-about__content .p-about__box .p-about__inner {
@@ -252,10 +256,20 @@
   line-height: 1.5em;
   letter-spacing: 0.1em;
 }
+@media screen and (max-width: 768px) {
+  .l-wrapper .l-main__aboutMiddle .p-about__content .p-about__box .p-about__inner .p-about__title {
+    font-size: 1.2em;
+  }
+}
 .l-wrapper .l-main__aboutMiddle .p-about__content .p-about__box .p-about__inner .p-about__text {
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 1.1em;
+  line-height: 2em;
   letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .l-wrapper .l-main__aboutMiddle .p-about__content .p-about__box .p-about__inner .p-about__text {
+    font-size: 0.85em;
+  }
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-main__aboutMiddle .p-about__content .p-about__box .p-about__inner .p-about__text {
