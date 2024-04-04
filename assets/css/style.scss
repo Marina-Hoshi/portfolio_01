@@ -172,7 +172,7 @@ $xl: 1024px;
   }
 
     &__aboutTop{
-    width: 40%;
+    width: 60%;
     height: 10%;
     padding: 8% 0;
     margin: 0 auto;
@@ -182,18 +182,21 @@ $xl: 1024px;
     }
 
       .c-aboutTop__title{
-        font-size: 1.5em;
+        font-size: 2.0em;
         font-weight: 300;
         line-height: 1.5em;
         letter-spacing: 0.1em;
         @include xl {
-          font-size: 1.2em;
+          font-size: 1.6em;
         }
         @include lg {
-          font-size: 1.0em;
+          font-size: 1.35em;
         }
         @include md {
-          font-size: 0.77em;
+          font-size: 1.1em;
+        }
+        @include md {
+          font-size: 0.9em;
         }
       }
     }
@@ -248,7 +251,7 @@ $xl: 1024px;
           left: 75%;
           transform: translate(-50%, -50%);
           width: 50%;
-          height: 55%;
+          height: auto;
           background-color: #F8F8F8;
           @include sp {
             top: 110%;
@@ -257,40 +260,59 @@ $xl: 1024px;
           }
 
           .p-about__inner{
-            padding: 7%;
+            padding: 6%;
             @include lg {
-              padding: 7%;
+              padding: 4.5%;
+            }
+            @include md {
+              padding: 4.5%;
             }
             @include sp {
-              padding: 10%;
+              padding: 7%;
             }
 
             .p-about__title{
               height: 35%;
-              margin-bottom: 5%;
+              margin-bottom: 3%;
               font-size: 1.6em;
               font-weight: 300;
               line-height: 1.5em;
               letter-spacing: 0.1em;
-              @include lg {
-                font-size: 1.2em;
+              @include xl {
+                font-size: 1.3em;
               }
-              // @include sp {
-              //   margin-bottom: 3%;
-              //   font-size: 0.7em;
-              // }
+              @include lg {
+                font-size: 1.1em;
+                line-height: 1.4em;
+              }
+              @include md {
+                font-size: 0.85em;
+              }
+              @include sp {
+                font-size: 1.0em;
+              }
             }
 
             .p-about__text{
               font-size: 1.1em;
               line-height: 2.0em;
               letter-spacing: 0.1em;
-              @include lg {
+              @include xl {
                 font-size: 0.85em;
+                line-height: 1.6em;
+              }
+              @include lg {
+                font-size: 0.7em;
+              }
+              @include md {
+                font-size: 0.3em;
+                line-height: 2.5em;
+                letter-spacing: 0.35em;
               }
               @include sp {
-                font-size: 0.5em;
+                font-size: 0.7em;
                 line-height: 1.8em;
+                letter-spacing: 0.1em;
               }
             }
           }
@@ -311,7 +333,7 @@ $xl: 1024px;
           top: 110%;
           left: 47%;
           width: 90%;
-          height: 55%;
+          // height: 55%;
         }
       }
 
@@ -324,7 +346,7 @@ $xl: 1024px;
           top: 110%;
           left: 55%;
           width: 90%;
-          height: 55%;
+          // height: 55%;
         }
       }
     }
