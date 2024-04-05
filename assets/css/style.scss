@@ -94,23 +94,15 @@ $xl: 1024px;
     justify-content: space-between;
     width: 90%;
     height: auto;
-    // @include xl {
-    //   // top: 14%;
-    //   transform: translate(-50%, -55%);
-    // }
     @include lg {
-      // top: 13%;
       transform: translate(-50%, -55%);
     }
     @include md {
-      // top: 12%;
       transform: translate(-50%, -75%);
     }
     @include sp {
       top: 8%;
-      // transform: translate(-50%, -82%);
     }
-
 
     .c-heading{
       width: 30%;
@@ -240,7 +232,7 @@ $xl: 1024px;
         @include md {
           font-size: 1.1em;
         }
-        @include md {
+        @include sp {
           font-size: 0.9em;
         }
       }
@@ -903,8 +895,17 @@ $xl: 1024px;
         font-size: 1.4em;
         line-height: 1.8em;
         letter-spacing: 0.05em;
+        @include xl {
+          font-size: 1.3em;
+        }
+        @include lg {
+          font-size: 1.2em;
+        }
+        @include md {
+          font-size: 1.1em;
+        }
         @include sp {
-          font-size: 0.8em;
+          font-size: 1.0em;
         }
       }
     }
@@ -912,7 +913,7 @@ $xl: 1024px;
     &__containerMiddle{
       width: 100%;
       height: 35%;
-      padding-top: 10%;
+      padding-top: 8%;
       @include sp {
         height: 50%;
       }
@@ -925,11 +926,19 @@ $xl: 1024px;
         }
 
         .c-nav__menu{
-          font-size: 0.75em;
+          font-size: 0.85em;
           letter-spacing: 0.05em;
+          @include xl {
+            font-size: 0.8em;
+          }
+          @include lg {
+            font-size: 0.65em;
+          }
+          @include md {
+            font-size: 8.5px;
+          }
           @include sp {
-            font-size: 6px;
-            line-height: 2em;
+            line-height: 2.75em;
             letter-spacing: 0.01em;
             text-align: center;
           }
@@ -950,6 +959,9 @@ $xl: 1024px;
       .c-footer__copyright{
         font-size: 0.5em;
         letter-spacing: 0.09em;
+        @include md {
+          font-size: 7px;
+        }
         @include sp {
           font-size: 6px;
         }

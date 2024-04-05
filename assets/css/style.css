@@ -234,7 +234,7 @@
     font-size: 1.1em;
   }
 }
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 480px) {
   .l-wrapper .l-main__aboutTop .c-aboutTop__title {
     font-size: 0.9em;
   }
@@ -933,15 +933,30 @@
   line-height: 1.8em;
   letter-spacing: 0.05em;
 }
+@media screen and (max-width: 1024px) {
+  .l-wrapper .l-footer__containerTop .c-footer__name {
+    font-size: 1.3em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .l-wrapper .l-footer__containerTop .c-footer__name {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 610px) {
+  .l-wrapper .l-footer__containerTop .c-footer__name {
+    font-size: 1.1em;
+  }
+}
 @media screen and (max-width: 480px) {
   .l-wrapper .l-footer__containerTop .c-footer__name {
-    font-size: 0.8em;
+    font-size: 1em;
   }
 }
 .l-wrapper .l-footer__containerMiddle {
   width: 100%;
   height: 35%;
-  padding-top: 10%;
+  padding-top: 8%;
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-footer__containerMiddle {
@@ -958,13 +973,27 @@
   }
 }
 .l-wrapper .l-footer__containerMiddle .p-nav__menu .c-nav__menu {
-  font-size: 0.75em;
+  font-size: 0.85em;
   letter-spacing: 0.05em;
+}
+@media screen and (max-width: 1024px) {
+  .l-wrapper .l-footer__containerMiddle .p-nav__menu .c-nav__menu {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .l-wrapper .l-footer__containerMiddle .p-nav__menu .c-nav__menu {
+    font-size: 0.65em;
+  }
+}
+@media screen and (max-width: 610px) {
+  .l-wrapper .l-footer__containerMiddle .p-nav__menu .c-nav__menu {
+    font-size: 8.5px;
+  }
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-footer__containerMiddle .p-nav__menu .c-nav__menu {
-    font-size: 6px;
-    line-height: 2em;
+    line-height: 2.75em;
     letter-spacing: 0.01em;
     text-align: center;
   }
@@ -984,6 +1013,11 @@
 .l-wrapper .l-footer__containerBottom .c-footer__copyright {
   font-size: 0.5em;
   letter-spacing: 0.09em;
+}
+@media screen and (max-width: 610px) {
+  .l-wrapper .l-footer__containerBottom .c-footer__copyright {
+    font-size: 7px;
+  }
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-footer__containerBottom .c-footer__copyright {
