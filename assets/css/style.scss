@@ -67,8 +67,18 @@ $xl: 1024px;
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 1.0em;
+      font-weight: lighter;
       letter-spacing: 0.1em;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+      @include xl {
+        font-size: 0.9em;
+      }
+      @include lg {
+        font-size: 0.8em;
+      }
+      @include md {
+        font-size: 0.6em;
+      }
       @include sp {
         font-size: 0.5em;
       }
@@ -83,7 +93,24 @@ $xl: 1024px;
     display: flex;
     justify-content: space-between;
     width: 90%;
-    height: 155px;
+    height: auto;
+    @include xl {
+      // top: 14%;
+      transform: translate(-50%, -55%);
+    }
+    @include lg {
+      // top: 13%;
+      transform: translate(-50%, -65%);
+    }
+    @include md {
+      // top: 12%;
+      transform: translate(-50%, -75%);
+    }
+    @include sp {
+      // top: 11%;
+      transform: translate(-50%, -82%);
+    }
+
 
     .c-heading{
       width: 30%;
@@ -97,8 +124,17 @@ $xl: 1024px;
         line-height: 1.8em;
         letter-spacing: 0.1em;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+        @include xl {
+          font-size: 1.8em;
+        }
+        @include lg {
+          font-size: 1.5em;
+        }
+        @include md {
+          font-size: 1.3em;
+        }
         @include sp {
-          font-size: 1em;
+          font-size: 0.95em;
         }
       }
     }
@@ -113,6 +149,15 @@ $xl: 1024px;
       letter-spacing: 0.1em;
       text-align: right;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+      @include xl {
+        font-size: 0.9em;
+      }
+      @include lg {
+        font-size: 0.8em;
+      }
+      @include md {
+        font-size: 0.6em;
+      }
       @include sp {
         display: none;
       }
