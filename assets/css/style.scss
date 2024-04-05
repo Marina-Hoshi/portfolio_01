@@ -94,22 +94,22 @@ $xl: 1024px;
     justify-content: space-between;
     width: 90%;
     height: auto;
-    @include xl {
-      // top: 14%;
-      transform: translate(-50%, -55%);
-    }
-    @include lg {
-      // top: 13%;
-      transform: translate(-50%, -65%);
-    }
-    @include md {
-      // top: 12%;
-      transform: translate(-50%, -75%);
-    }
-    @include sp {
-      // top: 11%;
-      transform: translate(-50%, -82%);
-    }
+    // @include xl {
+    //   // top: 14%;
+    //   transform: translate(-50%, -55%);
+    // }
+    // @include lg {
+    //   // top: 13%;
+    //   transform: translate(-50%, -65%);
+    // }
+    // @include md {
+    //   // top: 12%;
+    //   transform: translate(-50%, -75%);
+    // }
+    // @include sp {
+    //   // top: 11%;
+    //   transform: translate(-50%, -82%);
+    // }
 
 
     .c-heading{
