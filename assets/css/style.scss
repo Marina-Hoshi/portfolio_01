@@ -2,7 +2,7 @@
 
 $sp: 480px;
 $md: 610px;
-$lg: 768px;/* もう少し大きめに変更するか要確認 */
+$lg: 768px;
 $xl: 1024px;
 
 @mixin xl {
@@ -24,7 +24,7 @@ $xl: 1024px;
   @media screen and (max-width: ($sp)) {
     @content;
   }
-}/* もう少し大きめに変更予定 */
+}
 
 .l-wrapper{
   display: flex;
@@ -370,7 +370,6 @@ $xl: 1024px;
           top: 110%;
           left: 47%;
           width: 90%;
-          // height: 55%;
         }
       }
 
@@ -383,7 +382,6 @@ $xl: 1024px;
           top: 110%;
           left: 55%;
           width: 90%;
-          // height: 55%;
         }
       }
     }
@@ -429,19 +427,25 @@ $xl: 1024px;
       padding: 8% 0;
 
       .c-lineupTop__title{
-        width: 10%;
+        width: 20%;
         margin: 0 auto;
         text-align: center;
-        @include sp {
-          width: 20%;
-        }
 
         .c-lineupTop__heading{
-          font-size: 2.0em;
+          font-size: 2.1em;
           font-weight: 300;
           letter-spacing: 0.1em;
+          @include xl {
+            font-size: 1.8em;
+          }
+          @include lg {
+            font-size: 1.5em;
+          }
+          @include md {
+            font-size: 1.3em;
+          }
           @include sp {
-            font-size: 0.8em;
+            font-size: 1.1em;
           }
         }
       }
@@ -453,7 +457,7 @@ $xl: 1024px;
       padding-bottom: 8%;
 
       .p-lineup__container{
-        width: 40%;
+        width: 38%;
         height: auto;
         margin: 0 auto;
         @include sp {
@@ -488,31 +492,62 @@ $xl: 1024px;
             align-items: flex-end;
             width: 95%;
             margin: 0 2.5%;
+            @include sp {
+              top: 96%;
+            }
 
             .c-lineup__product{
               font-size: 1.5em;
               font-weight: 300;
               line-height: 1.5em;
               letter-spacing: 0.1em;
+              @include xl {
+                font-size: 1.2em;
+              }
+              @include lg {
+                font-size: 0.9em;
+              }
+              @include md {
+                font-size: 0.75em;
+              }
               @include sp {
-                font-size: 0.8em;
+                font-size: 1.1em;
               }
             }
 
             .c-lineup__price{
-              font-size: 1.5em;
+              font-size: 1.3em;
               font-weight: 300;
               line-height: 1.5em;
               letter-spacing: 0.1em;
-              @include sp {
+              @include xl {
+                font-size: 1.0em;
+              }
+              @include lg {
                 font-size: 0.8em;
+              }
+              @include md {
+                font-size: 0.65em;
+                letter-spacing: 0.03em;
+              }
+              @include sp {
+                font-size: 1.0em;
               }
             }
 
             .c-lineup__price--small{
               font-size: 0.7em;
+              @include xl {
+                font-size: 0.6em;
+              }
+              @include lg {
+                font-size: 0.5em;
+              }
+              @include md {
+                font-size: 0.3em;
+              }
               @include sp {
-                font-size: 9px;
+                font-size: 10px;
               }
             }
           }
@@ -534,9 +569,18 @@ $xl: 1024px;
         .c-button{
           padding: 10%;
           color: #E8E8E8;
-          font-size: 1.0em;
+          font-size: 1.2em;
           font-weight: 300;
           letter-spacing: 0.1em;
+          @include xl {
+            font-size: 1.0em;
+          }
+          @include lg {
+            font-size: 0.8em;
+          }
+          @include md {
+            font-size: 0.6em;
+          }
           @include sp {
             padding: 7%;
             font-size: 0.7em;
@@ -545,24 +589,30 @@ $xl: 1024px;
       }
 
       .p-lineup__description{
-        width: 60%;
+        width: 70%;
         height: 20%;
         margin: 0 auto;
         text-align: center;
-        @include sp {
-          width: 70%;
-        }
 
         .p-lineup__text{
           width: 100%;
-          font-size: 1.0em;
+          font-size: 1.3em;
           font-weight: 300;
-          line-height: 2.0em;
+          line-height: 2.2em;
           letter-spacing: 0.1em;
           overflow-wrap: break-word;
+          @include xl {
+            font-size: 1.0em;
+          }
+          @include lg {
+            font-size: 0.85em;
+          }
+          @include md {
+            font-size: 0.7em;
+          }
           @include sp {
-            font-size: 8px;
-            line-height: 1.5em;
+            font-size: 10px;
+            line-height: 2.5em;
             letter-spacing: 0.05em;
           }
         }
@@ -579,7 +629,7 @@ $xl: 1024px;
       }
 
       .p-lineup__box{
-        padding: 5% 10%;
+        padding: 4% 8%;
         border: 1px solid #C6C9CC;
         background-color: #F8F8F8;
         list-style: none;
@@ -587,31 +637,50 @@ $xl: 1024px;
         .c-lineup__list{
           display: flex;
           margin-bottom: 3%;
+          align-items: center;
 
           .c-lineup__item{
-            width: 15%;
+            width: 20%;
             text-align: right;
-            font-size: 1.0em;
+            font-size: 1.2em;
             letter-spacing: 0.1em;
+            @include xl {
+              font-size: 1.0em;
+            }
+            @include lg {
+              font-size: 0.8em;
+            }
+            @include md {
+              font-size: 0.55em;
+            }
             @include sp {
-              font-size: 7px;
+              font-size: 10px;
             }
           }
 
           .c-lineup__content{
-            width: 85%;
+            width: 80%;
             margin-left: 5%;
-            font-size: 1.0em;
+            font-size: 1.2em;
+            line-height: 1.5em;
             letter-spacing: 0.1em;
+            @include xl {
+              font-size: 1.0em;
+            }
+            @include lg {
+              font-size: 0.8em;
+            }
+            @include md {
+              font-size: 0.55em;
+            }
             @include sp {
-              font-size: 7px;
-              line-height: 1.5em;
+              font-size: 10px;
             }
           }
+        }
 
         .c-lineup__list:last-child{
           margin-bottom: 0;
-        }
         }
       }
     }
@@ -627,65 +696,85 @@ $xl: 1024px;
       padding: 8% 0;
       margin: 0 auto;
       text-align: center;
-      @include sp {
+      @include md {
         width: 30%;
       }
 
       .c-shop__heading{
         height: 35%;
         margin-bottom: 8%;
-        font-size: 2.0em;
+        font-size: 2.1em;
         font-weight: 300;
         letter-spacing: 0.2em;
+        @include xl {
+          font-size: 1.8em;
+        }
+        @include lg {
+          font-size: 1.5em;
+        }
+        @include md {
+          font-size: 1.3em;
+        }
         @include sp {
-          margin-bottom: 5%;
-          font-size: 0.8em;
+          font-size: 1.1em;
         }
       }
 
       .c-shop__description{
-        font-size: 0.9em;
+        font-size: 1.0em;
         font-weight: 300;
         letter-spacing: 0.1em;
+        @include xl {
+          font-size: 0.8em;
+        }
+        @include lg {
+          font-size: 0.6em;
+        }
         @include sp {
-          font-size: 7px;
+          font-size: 9px;
         }
       }
     }
 
     .p-main__shopBottom{
-      width: 70%;
+      width: 80%;
       margin: 0 auto;
       padding-bottom: 8%;
       text-align: center;
-      @include sp {
-        width: 80%;
-      }
 
       .p-shop__information{
         display: flex;
         justify-content: space-between;
         list-style: none;
-        @include sp {
+        @include md {
           display: block;
         }
 
         .p-shop__list{
           width: 45%;
           height: auto;
-          @include sp {
+          @include md {
             width: 100%;
           }
 
           .c-shop__name{
             border-bottom: 1px solid #C6C9CC;
-            padding: 5% 0;
-            font-size: 1.2em;
+            padding-bottom: 5%;
+            font-size: 1.3em;
             font-weight: 300;
             letter-spacing: 0.1em;
             text-align: left;
+            @include xl {
+              font-size: 1.1em;
+            }
+            @include lg {
+              font-size: 0.9em;
+            }
+            @include md {
+              padding-bottom: 3%;
+              font-size: 0.8em;
+            }
             @include sp {
-              padding: 3% 0;
               font-size: 8px;
             }
           }
@@ -693,24 +782,34 @@ $xl: 1024px;
           .p-shop__box{
             margin: 10% 0;
             list-style: none;
-            @include sp {
+            @include md {
               margin: 5% 0 12%;
             }
 
             .c-shop__list{
               display: flex;
               margin-bottom: 6%;
-              @include sp {
+              @include md {
                 margin-bottom: 2%;
               }
 
               .c-shop__item{
                 width: 25%;
                 font-size: 1.0em;
-                letter-spacing: 0.2em;
+                letter-spacing: 0.15em;
                 text-align: left;
+                @include xl {
+                  font-size: 0.75em;
+                }
+                @include lg {
+                  font-size: 0.55em;
+                }
+                @include md {
+                  font-size: 0.7em;
+                  letter-spacing: 0.12em;
+                }
                 @include sp {
-                  font-size: 7px;
+                  font-size: 10px;
                 }
               }
 
@@ -718,12 +817,22 @@ $xl: 1024px;
                 width: 85%;
                 margin-left: 5%;
                 font-size: 1.0em;
-                line-height: 1.5em;
-                letter-spacing: 0.2em;
+                line-height: 1.7em;
+                letter-spacing: 0.15em;
                 text-align: left;
+                @include xl {
+                  font-size: 0.75em;
+                }
+                @include lg {
+                  font-size: 0.55em;
+                }
+                @include md {
+                  font-size: 0.7em;
+                  line-height: 2.3em;
+                  letter-spacing: 0.12em;
+                }
                 @include sp {
-                  font-size: 7px;
-                  line-height: 1.5em;
+                  font-size: 10px;
                 }
               }
             }
@@ -750,23 +859,29 @@ $xl: 1024px;
         }
 
         .c-newsTop__heading{
-          font-size: 2em;
+          font-size: 2.1em;
           font-weight: 300;
           letter-spacing: 0.1em;
+          @include xl {
+            font-size: 1.8em;
+          }
+          @include lg {
+            font-size: 1.5em;
+          }
+          @include md {
+            font-size: 1.3em;
+          }
           @include sp {
-            font-size: 0.8em;
+            font-size: 1.1em;
           }
         }
       }
     }
 
     &__newsBottom{
-      width: 70%;
+      width: 80%;
       padding-bottom: 8%;
       margin: 0 auto;
-      @include sp {
-        width: 80%;
-      }
 
       .p-news__information{
         list-style: none;
@@ -779,59 +894,89 @@ $xl: 1024px;
           padding-bottom: 3%;
           align-items: center;
           border-bottom: 1px solid rgb(198, 201, 204);
-          @include sp {
+          @include md {
             flex-wrap: wrap;
+            margin-bottom: 5%;
+            padding-bottom: 5%;
           }
 
           .c-news__date{
-            width: 16%;
-            font-size: 0.9em;
+            width: 18%;
+            font-size: 0.95em;
             font-weight: 300;
             letter-spacing: 0.1em;
             text-align: left;
+            @include xl {
+              font-size: 0.8em;
+            }
+            @include lg {
+              font-size: 0.6em;
+            }
+            @include md {
+              font-size: 0.5em;
+            }
             @include sp {
               width: 20%;
-              font-size: 6px;
+              font-size: 9px;
             }
           }
 
           .c-news__tag{
             display: flex;
             align-items: center;
-            width: 7%;
+            width: 10%;
             background-color: rgb(198, 201, 204);
             text-align: center;
             padding: 1%;
-            @include sp {
-              width: 8%;
+            @include md {
+              width: 18%;
+              margin-left: 3%;
               padding: 0.1em;
-              font-size: 6px;
             }
 
             .c-news__button{
               width: 100%;
               height: 100%;
-              font-size: 0.8em;
+              font-size: 0.9em;
               font-weight: 300;
               letter-spacing: 0.1em;
+              @include xl {
+                font-size: 0.8em;
+              }
+              @include lg {
+                font-size: 0.6em;
+              }
+              @include md {
+                font-size: 0.45em;
+                letter-spacing: 0.15em;
+              }
               @include sp {
-                font-size: 0.7em;
+                font-size: 0.3em;
               }
             }
           }
 
           .c-news__content{
-            width: 75%;
+            width: 72%;
             margin-left: 5%;
-            font-size: 1em;
+            font-size: 1.0em;
             line-height: 1.5em;
             letter-spacing: 0.2em;
             text-align: left;
-            @include sp {
+            @include xl {
+              font-size: 0.85em;
+            }
+            @include lg {
+              font-size: 0.6em;
+            }
+            @include md {
               width: 100%;
-              margin: 5px 0 0 1px;
-              font-size: 6px;
+              margin: 10px 0 0 1px;
+              font-size: 0.7em;
               line-height: 1.5em;
+            }
+            @include sp {
+              font-size: 9.5px;
             }
           }
         }
@@ -839,11 +984,14 @@ $xl: 1024px;
         .p-news__list:first-child {
           padding-top: 3%;
           border-top: 1px solid rgb(198, 201, 204);
+          @include md {
+            padding-top: 5%;
+          }
         }
       }
 
       .p-news__button{
-        width: 9%;
+        width: 10%;
         margin-left: auto;
         text-align: center;
         padding: 2% 3%;
@@ -851,7 +999,8 @@ $xl: 1024px;
         border-style: solid;
         border-color: rgb(136, 136, 136);
         border-image: initial;
-        @include sp {
+        @include md {
+          width: 8%;
           padding: 1% 4%;
         }
 
@@ -859,8 +1008,17 @@ $xl: 1024px;
           font-size: 0.8em;
           font-weight: 300;
           letter-spacing: 0.1em;
+          @include xl {
+            font-size: 0.4em;
+          }
+          @include lg {
+            font-size: 8px;
+          }
+          @include md {
+            font-size: 9px;
+          }
           @include sp {
-            font-size: 6px;
+            font-size: 7px;
           }
         }
       }
