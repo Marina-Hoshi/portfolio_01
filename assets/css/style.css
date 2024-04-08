@@ -40,7 +40,7 @@
   transform: translate(-50%, -50%);
   font-size: 1em;
   font-weight: lighter;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.18em;
 }
 @media screen and (max-width: 1024px) {
   .l-wrapper .l-header__keyvisual .c-header__subTitle {
@@ -60,6 +60,7 @@
 @media screen and (max-width: 480px) {
   .l-wrapper .l-header__keyvisual .c-header__subTitle {
     font-size: 0.5em;
+    letter-spacing: 0.15em;
   }
 }
 .l-wrapper .l-header__inner {
@@ -92,7 +93,7 @@
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-header__inner .c-heading {
-    width: 40%;
+    width: 45%;
   }
 }
 .l-wrapper .l-header__inner .c-heading .c-header__title {
@@ -119,7 +120,7 @@
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-header__inner .c-heading .c-header__title {
-    font-size: 0.85em;
+    font-size: 1em;
     letter-spacing: 0.2em;
   }
 }

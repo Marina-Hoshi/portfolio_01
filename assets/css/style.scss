@@ -69,7 +69,7 @@ $xl: 1024px;
       transform: translate(-50%, -50%);
       font-size: 1.0em;
       font-weight: lighter;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.18em;
       @include xl {
         font-size: 0.9em;
       }
@@ -81,6 +81,7 @@ $xl: 1024px;
       }
       @include sp {
         font-size: 0.5em;
+        letter-spacing: 0.15em;
       }
     }
   }
@@ -107,7 +108,7 @@ $xl: 1024px;
     .c-heading{
       width: 33%;
       @include sp {
-        width: 40%;
+        width: 45%;
       }
 
       .c-header__title{
@@ -126,7 +127,7 @@ $xl: 1024px;
           font-size: 1.0em;
         }
         @include sp {
-          font-size: 0.85em;
+          font-size: 1.0em;
           letter-spacing: 0.2em;
         }
       }
