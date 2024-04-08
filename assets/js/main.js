@@ -1,9 +1,4 @@
 $(() => {
-  const fixHeaderHeight = () => {
-    const headerHeight = $('.l-header').outerHeight();
-    $('.l-header').css('height', headerHeight);
-  };
-
   const fadeInPage = () => {
     $('body').fadeIn(1000);
   };
@@ -64,7 +59,5 @@ $(() => {
     checkScrollSlideFadeLeft(scrollBottom);
     checkScrollSlideFadeRight(scrollBottom);
   });
-
-  fixHeaderHeight();
 });
 
