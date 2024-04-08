@@ -69,7 +69,6 @@ $xl: 1024px;
       font-size: 1.0em;
       font-weight: lighter;
       letter-spacing: 0.1em;
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
       @include xl {
         font-size: 0.9em;
       }
@@ -115,7 +114,6 @@ $xl: 1024px;
         font-weight: 300;
         line-height: 1.8em;
         letter-spacing: 0.1em;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
         @include xl {
           font-size: 1.8em;
         }
@@ -140,7 +138,6 @@ $xl: 1024px;
       line-height: 2.2em;
       letter-spacing: 0.1em;
       text-align: right;
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
       @include xl {
         font-size: 0.9em;
       }

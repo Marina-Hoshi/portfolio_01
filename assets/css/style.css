@@ -39,7 +39,6 @@
   font-size: 1em;
   font-weight: lighter;
   letter-spacing: 0.1em;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 @media screen and (max-width: 1024px) {
   .l-wrapper .l-header__keyvisual .c-header__subTitle {
@@ -99,7 +98,6 @@
   font-weight: 300;
   line-height: 1.8em;
   letter-spacing: 0.1em;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 @media screen and (max-width: 1024px) {
   .l-wrapper .l-header__inner .c-heading .c-header__title {
@@ -129,7 +127,6 @@
   line-height: 2.2em;
   letter-spacing: 0.1em;
   text-align: right;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 @media screen and (max-width: 1024px) {
   .l-wrapper .l-header .p-header__nav .p-nav__menu {
