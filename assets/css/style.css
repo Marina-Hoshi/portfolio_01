@@ -125,6 +125,7 @@
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-header__inner .c-heading .c-header__title {
+    margin-left: 5px;
     font-size: 1.2em;
     letter-spacing: 0.24em;
     line-height: 1.8em;
@@ -163,7 +164,7 @@
 @media screen and (max-width: 480px) {
   .l-wrapper .l-header .p-hamburger {
     position: fixed;
-    right: 22px;
+    right: 18px;
     top: 15px;
     width: 50px; /* クリックしやすい幅 */
     height: 50px; /* クリックしやすい高さ */

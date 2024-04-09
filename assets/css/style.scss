@@ -130,6 +130,7 @@ $xl: 1024px;
           font-size: 1.0em;
         }
         @include sp {
+          margin-left: 5px;
           font-size: 1.2em;
           letter-spacing: 0.24em;
           line-height: 1.8em;
@@ -165,7 +166,7 @@ $xl: 1024px;
   .p-hamburger {
       @include sp {
         position: fixed;
-        right: 22px;
+        right: 18px;
         top: 15px;
         width: 50px; /* クリックしやすい幅 */
         height: 50px; /* クリックしやすい高さ */
