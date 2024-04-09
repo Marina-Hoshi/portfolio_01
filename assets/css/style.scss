@@ -41,6 +41,9 @@ $xl: 1024px;
 .l-header {
   width: 100%;
   height: 864px;
+  @include sp {
+    height: 667px;
+  }
 
   &__keyvisual {
     position: relative;
@@ -80,8 +83,8 @@ $xl: 1024px;
         font-size: 0.6em;
       }
       @include sp {
-        font-size: 0.5em;
-        letter-spacing: 0.15em;
+        font-size: 0.9em;
+        letter-spacing: 0.16em;
       }
     }
   }
@@ -108,7 +111,7 @@ $xl: 1024px;
     .c-heading{
       width: 33%;
       @include sp {
-        width: 45%;
+        width: 50%;
       }
 
       .c-header__title{
@@ -127,8 +130,9 @@ $xl: 1024px;
           font-size: 1.0em;
         }
         @include sp {
-          font-size: 1.0em;
-          letter-spacing: 0.2em;
+          font-size: 1.2em;
+          letter-spacing: 0.24em;
+          line-height: 1.8em;
         }
       }
     }
@@ -159,46 +163,46 @@ $xl: 1024px;
   }
 
   .p-hamburger {
-    @include sp {
-      position: fixed;
-      right: 5px;
-      top: 10px;
-      width: 40px; /* クリックしやすい幅 */
-      height: 40px; /* クリックしやすい高さ */
-      cursor: pointer;
-      z-index: 300;
+      @include sp {
+        position: fixed;
+        right: 22px;
+        top: 15px;
+        width: 50px; /* クリックしやすい幅 */
+        height: 50px; /* クリックしやすい高さ */
+        cursor: pointer;
+        z-index: 500;
 
-    .hamburger_border {
-      position: absolute;
-      left: 11px;
-      width: 18px;
-      height: 1px;
-      background-color: #333333;
-      transition: all .6s;
+      .hamburger_border {
+        position: absolute;
+        left: 8px;
+        width: 20px;
+        height: 1px;
+        background-color: #333333;
+        transition: all .6s;
+      }
+      .c-hamburger_borderTop {
+        top: 20px;
+      }
+      .c-hamburger_borderMiddle {
+        top: 26px;
+      }
+      .c-hamburger_borderBottom {
+        top: 32px;
+      }
+      .black_bg {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 100;
+        background-color: #333333;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .6s;
+        cursor: pointer;
+      }
     }
-    .c-hamburger_borderTop {
-      top: 14px;
-    }
-    .c-hamburger_borderMiddle {
-      top: 20px;
-    }
-    .c-hamburger_borderBottom {
-      top: 26px;
-    }
-    .black_bg {
-      position: fixed;
-      left: 0;
-      top: 0;
-      width: 100vw;
-      height: 100vh;
-      z-index: 100;
-      background-color: #333333;
-      opacity: 0;
-      visibility: hidden;
-      transition: all .6s;
-      cursor: pointer;
-    }
-  }
   }
 }
 
@@ -291,7 +295,7 @@ $xl: 1024px;
           transform: translate(-50%, -50%);
           width: 50%;
           height: auto;
-          background-color: rgb(249, 249, 214);
+          background-color: #FFFFFF;
           @include sp {
             top: 110%;
             left: 55%;
@@ -421,7 +425,7 @@ $xl: 1024px;
 
   &__lineup{
     height: 25%;
-    background-color: rgb(224, 229, 229);
+    background-color: #F1F1E8;
   }
 
     &__lineupTop{
@@ -633,7 +637,7 @@ $xl: 1024px;
       .p-lineup__box{
         padding: 4% 8%;
         border: 1px solid #C6C9CC;
-        background-color: #F8F8F8;
+        background-color: #FFFFFF;
         list-style: none;
 
         .c-lineup__list{
@@ -689,7 +693,7 @@ $xl: 1024px;
 
   &__shop{
     height: 15%;
-    background-color: rgb(248, 248, 248);
+    background-color: #FFFFFF;
   }
 
     .p-main__shopTop{
@@ -845,7 +849,7 @@ $xl: 1024px;
 
   &__news{
     height: 10%;
-    background-color: rgb(224, 229, 229);
+    background-color: #F1F1E8;
   }
 
     &__newsTop{
