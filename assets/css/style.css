@@ -40,7 +40,7 @@
 }
 .l-wrapper .l-header__keyvisual .c-header__subTitle {
   position: absolute;
-  top: 80%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1em;
