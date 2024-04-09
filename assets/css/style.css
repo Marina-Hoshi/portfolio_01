@@ -164,7 +164,7 @@
 @media screen and (max-width: 480px) {
   .l-wrapper .l-header .p-hamburger {
     position: fixed;
-    right: 18px;
+    right: 15px;
     top: 15px;
     width: 50px; /* クリックしやすい幅 */
     height: 50px; /* クリックしやすい高さ */

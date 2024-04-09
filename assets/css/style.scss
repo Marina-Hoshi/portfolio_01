@@ -166,7 +166,7 @@ $xl: 1024px;
   .p-hamburger {
       @include sp {
         position: fixed;
-        right: 18px;
+        right: 15px;
         top: 15px;
         width: 50px; /* クリックしやすい幅 */
         height: 50px; /* クリックしやすい高さ */
