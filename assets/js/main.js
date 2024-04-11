@@ -50,6 +50,7 @@ $(() => {
     });
   };
 
+
   $(window).scroll(() => {
     const scrollTop = $(window).scrollTop();
     const windowHeight = $(window).height();

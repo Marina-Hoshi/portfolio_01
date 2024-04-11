@@ -168,8 +168,8 @@ $xl: 1024px;
         position: fixed;
         right: 15px;
         top: 15px;
-        width: 50px; /* クリックしやすい幅 */
-        height: 50px; /* クリックしやすい高さ */
+        width: 50px;
+        height: 50px;
         cursor: pointer;
         z-index: 500;
 
@@ -209,10 +209,10 @@ $xl: 1024px;
 
 .l-main{
   height: 85%;
-  background-color: rgb(249, 249, 214);
 
   &__about{
     height: 50%;
+      background-color: #F8F7ED;
   }
 
     &__aboutTop{
@@ -1035,7 +1035,7 @@ $xl: 1024px;
 
 .l-footer{
   height: 5%;
-  border-top: 1px solid rgb(224, 224, 224);
+  background-color: #FFFFFF;
 
   &__container{
     width: 60%;

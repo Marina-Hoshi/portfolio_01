@@ -2,24 +2,27 @@ body {
   display: none;
 }
 
-._scrollFadeIn {
+._scrollFadeIn,
+._scrollSlideFadeLeft,
+._scrollSlideFadeRight {
   opacity: 0;
-  transition-property: all;
+  transition-property: opacity, transform;
   transition-duration: 1s;
 }
+
 ._isActiveFadeIn {
   opacity: 1;
 }
 
 ._scrollSlideFadeLeft {
   opacity: 0;
-  transform: translateX(-50px);
+  transform: translateX(-15px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 ._scrollSlideFadeRight {
   opacity: 0;
-  transform: translateX(50px);
+  transform: translateX(15px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
@@ -28,3 +31,4 @@ body {
   opacity: 1;
   transform: translateX(0);
 }
+
