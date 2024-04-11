@@ -90,7 +90,7 @@
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-header__inner {
-    top: 20%;
+    top: 14%;
   }
 }
 .l-wrapper .l-header__inner .c-heading {
