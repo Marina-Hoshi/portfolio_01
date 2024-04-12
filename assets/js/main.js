@@ -1,6 +1,9 @@
 $(() => {
   const fadeInPage = () => {
     $('body').fadeIn(1000);
+
+  const $hamburgerMenu = $('.p-hamburger');
+  $hamburgerMenu.fadeIn(1000);
   };
 
   fadeInPage();
@@ -60,5 +63,12 @@ $(() => {
     checkScrollSlideFadeLeft(scrollBottom);
     checkScrollSlideFadeRight(scrollBottom);
   });
-});
 
+// ハンバーガーメニューのクリックイベントを設定する
+$('#js-hamburger').on('click', function() {
+  // 背景色が透過した黄色のボックスを表示する
+  $('#js-black-bg').fadeIn(300);
+  // メニューのリストをフェードインする
+  $('.p-header__nav').fadeIn(300).toggleClass('is-active');
+});
+});
