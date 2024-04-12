@@ -264,6 +264,7 @@ $xl: 1024px;
         }
 
         .p-about__img{
+          position: relative;
           width: 60%;
           @include sp {
             width: 90%;
@@ -300,7 +301,7 @@ $xl: 1024px;
           background-color: #FFFFFF;
           @include sp {
             top: 110%;
-            left: 55%;
+            left: 53%;
             width: 90%;
           }
 
@@ -313,7 +314,7 @@ $xl: 1024px;
               padding: 4.5%;
             }
             @include sp {
-              padding: 7%;
+              padding: 10%;
             }
 
             .p-about__title{
@@ -376,7 +377,7 @@ $xl: 1024px;
         z-index: 2;
         @include sp {
           top: 110%;
-          left: 47%;
+          left: 45%;
           width: 90%;
         }
       }
@@ -388,7 +389,7 @@ $xl: 1024px;
         transform: translate(-50%, -50%);
         @include sp {
           top: 110%;
-          left: 55%;
+          left: 53%;
           width: 90%;
         }
       }

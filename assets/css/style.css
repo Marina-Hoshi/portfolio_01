@@ -270,6 +270,7 @@
   }
 }
 .l-wrapper .l-main__aboutMiddle .p-about__content .p-about__img {
+  position: relative;
   width: 60%;
 }
 @media screen and (max-width: 480px) {
@@ -306,7 +307,7 @@
 @media screen and (max-width: 480px) {
   .l-wrapper .l-main__aboutMiddle .p-about__content .p-about__box {
     top: 110%;
-    left: 55%;
+    left: 53%;
     width: 90%;
   }
 }
@@ -325,7 +326,7 @@
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-main__aboutMiddle .p-about__content .p-about__box .p-about__inner {
-    padding: 7%;
+    padding: 10%;
   }
 }
 .l-wrapper .l-main__aboutMiddle .p-about__content .p-about__box .p-about__inner .p-about__title {
@@ -400,7 +401,7 @@
 @media screen and (max-width: 480px) {
   .l-wrapper .l-main__aboutMiddle .p-about__content:nth-of-type(2) .p-about__box {
     top: 110%;
-    left: 47%;
+    left: 45%;
     width: 90%;
   }
 }
@@ -413,7 +414,7 @@
 @media screen and (max-width: 480px) {
   .l-wrapper .l-main__aboutMiddle .p-about__content:nth-of-type(3) .p-about__box {
     top: 110%;
-    left: 55%;
+    left: 53%;
     width: 90%;
   }
 }
