@@ -187,7 +187,7 @@ $xl: 1024px;
         right: 0;
         z-index: 99;
         width: 40%;
-        max-width: 50%;
+        max-width: 45%;
         margin: 0%;
         background: #F8F7ED;
         opacity: 0.8;
@@ -195,7 +195,7 @@ $xl: 1024px;
 
       .p-nav__menu{
         @include sp {
-          margin: 55% 15%;
+          margin: 45% 15%;
         }
       }
 
@@ -218,6 +218,12 @@ $xl: 1024px;
           font-size: 0.9em;
           line-height: 3.2em;
           letter-spacing: 0.2em;
+        }
+      }
+
+      .c-nav__menu:first-child {
+        @include sp {
+          margin-top: 15px;
         }
       }
     }

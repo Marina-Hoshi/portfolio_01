@@ -172,7 +172,7 @@
     right: 0;
     z-index: 99;
     width: 40%;
-    max-width: 50%;
+    max-width: 45%;
     margin: 0%;
     background: #F8F7ED;
     opacity: 0.8;
@@ -180,7 +180,7 @@
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-header__inner .p-header__nav .p-nav__menu {
-    margin: 55% 15%;
+    margin: 45% 15%;
   }
 }
 .l-wrapper .l-header__inner .p-header__nav .c-nav__menu {
@@ -210,6 +210,11 @@
     font-size: 0.9em;
     line-height: 3.2em;
     letter-spacing: 0.2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .l-wrapper .l-header__inner .p-header__nav .c-nav__menu:first-child {
+    margin-top: 15px;
   }
 }
 .l-wrapper .l-main {
