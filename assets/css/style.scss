@@ -183,6 +183,7 @@ $xl: 1024px;
       margin: 5%;
       @include sp {
         position: fixed;
+        display: none;
         top: 0;
         right: 0;
         z-index: 99;
