@@ -98,23 +98,13 @@ $xl: 1024px;
     justify-content: space-between;
     width: 100%;
     height: auto;
-    // @include lg {
-    //   transform: translate(-50%, 0%);
-    // }
-    // @include md {
-    //   transform: translate(-50%, 0%);
-    // }
-    // @include sp {
-      // top: 13%;
-      // margin-left: 3px;
-    // }
 
     .c-heading{
       width: 33%;
       margin: 5%;
       @include sp {
         width: 50%;
-      margin-top: 12%;
+        margin-top: 12%;
       }
 
       .c-header__title{
@@ -172,20 +162,20 @@ $xl: 1024px;
   }
 
   //×ボタン
-      .hamburger_border.open {
-        top: 35px;
+      #p-drawer_toggle.open .hamburger_border{
+        top: 25px;
         right: 5px;
-        width: 55px;
+        width: 25px;
         margin: 0;
       }
-      .c-hamburger_borderTop.open {
+      #p-drawer_toggle.open .c-hamburger_borderTop {
         transform: rotate(45deg);
       }
-      .c-hamburger_borderMiddle.open {
+      #p-drawer_toggle.open .c-hamburger_borderMiddle {
         display: none;
       }
-      .c-hamburger_borderBottom.open {
-        transform: rotate(45deg);
+      #p-drawer_toggle.open .c-hamburger_borderBottom {
+        transform: rotate(-45deg);
       }
 
     .p-header__nav{
@@ -201,9 +191,6 @@ $xl: 1024px;
         margin: 0%;
         background: #F8F7ED;
         opacity: 0.8;
-      //   visibility: hidden;
-      //   transition: all .6s;
-      //   cursor: pointer;
       }
 
       .p-nav__menu{
@@ -228,14 +215,14 @@ $xl: 1024px;
           letter-spacing: 0.15em;
         }
         @include sp {
-          line-height: 3.0em;
-          letter-spacing: 0.3em;
+          font-size: 0.9em;
+          line-height: 3.2em;
+          letter-spacing: 0.2em;
         }
       }
     }
   }
 }
-
 
 .l-main{
   height: 85%;
