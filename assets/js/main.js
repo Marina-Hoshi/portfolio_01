@@ -64,11 +64,10 @@ $(() => {
     checkScrollSlideFadeRight(scrollBottom);
   });
 
-// ハンバーガーメニューのクリックイベントを設定する
-$('#js-hamburger').on('click', function() {
-  // 背景色が透過した黄色のボックスを表示する
-  $('#js-black-bg').fadeIn(300);
-  // メニューのリストをフェードインする
-  $('.p-header__nav').fadeIn(300).toggleClass('is-active');
-});
+  $(function(){
+    $("#p-drawer_toggle").click(function(){
+    	$(this).toggleClass("open");
+    	$(".p-header__nav").fadeToggle();
+    });
+  });
 });

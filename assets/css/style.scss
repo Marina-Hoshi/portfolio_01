@@ -91,28 +91,30 @@ $xl: 1024px;
 
   &__inner {
     position: absolute;
-    top: 20%;
+    top: 0%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     height: auto;
-    @include lg {
-      transform: translate(-50%, -55%);
-    }
-    @include md {
-      transform: translate(-50%, -75%);
-    }
-    @include sp {
-      top: 13%;
-      margin-left: 3px;
-    }
+    // @include lg {
+    //   transform: translate(-50%, 0%);
+    // }
+    // @include md {
+    //   transform: translate(-50%, 0%);
+    // }
+    // @include sp {
+      // top: 13%;
+      // margin-left: 3px;
+    // }
 
     .c-heading{
       width: 33%;
+      margin: 5%;
       @include sp {
         width: 50%;
+      margin-top: 12%;
       }
 
       .c-header__title{
@@ -138,33 +140,8 @@ $xl: 1024px;
         }
       }
     }
-  }
 
-  .p-header__nav{
-    width: 20%;
-
-    .p-nav__menu{
-      font-size: 1.0em;
-      line-height: 2.2em;
-      letter-spacing: 0.18em;
-      text-align: right;
-      @include xl {
-        font-size: 0.9em;
-      }
-      @include lg {
-        font-size: 0.8em;
-      }
-      @include md {
-        font-size: 0.6em;
-        letter-spacing: 0.15em;
-      }
-      @include sp {
-        display: none;
-      }
-    }
-  }
-
-  .p-hamburger {
+    #p-drawer_toggle {
       @include sp {
         position: fixed;
         right: 8px;
@@ -191,22 +168,74 @@ $xl: 1024px;
       .c-hamburger_borderBottom {
         top: 32px;
       }
-      .black_bg {
+    }
+  }
+
+  //×ボタン
+      .hamburger_border.open {
+        top: 35px;
+        right: 5px;
+        width: 55px;
+        margin: 0;
+      }
+      .c-hamburger_borderTop.open {
+        transform: rotate(45deg);
+      }
+      .c-hamburger_borderMiddle.open {
+        display: none;
+      }
+      .c-hamburger_borderBottom.open {
+        transform: rotate(45deg);
+      }
+
+    .p-header__nav{
+      width: 20%;
+      margin: 5%;
+      @include sp {
         position: fixed;
-        left: 0;
         top: 0;
-        width: 100vw;
-        height: 100vh;
-        z-index: 100;
-        background-color: #333333;
-        opacity: 0;
-        visibility: hidden;
-        transition: all .6s;
-        cursor: pointer;
+        right: 0;
+        z-index: 99;
+        width: 40%;
+        max-width: 50%;
+        margin: 0%;
+        background: #F8F7ED;
+        opacity: 0.8;
+      //   visibility: hidden;
+      //   transition: all .6s;
+      //   cursor: pointer;
+      }
+
+      .p-nav__menu{
+        @include sp {
+          margin: 55% 15%;
+        }
+      }
+
+      .c-nav__menu{
+        font-size: 1.0em;
+        line-height: 2.2em;
+        letter-spacing: 0.18em;
+        text-align: right;
+        @include xl {
+          font-size: 0.9em;
+        }
+        @include lg {
+          font-size: 0.8em;
+        }
+        @include md {
+          font-size: 0.6em;
+          letter-spacing: 0.15em;
+        }
+        @include sp {
+          line-height: 3.0em;
+          letter-spacing: 0.3em;
+        }
       }
     }
   }
 }
+
 
 .l-main{
   height: 85%;
