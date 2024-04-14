@@ -68,61 +68,66 @@
     letter-spacing: 0.16em;
   }
 }
-.l-wrapper .l-header__inner {
+.l-wrapper .l-header .c-heading {
   position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: auto;
-}
-.l-wrapper .l-header__inner .c-heading {
+  top: 9%;
+  left: 6%;
   width: 33%;
-  margin: 5%;
 }
 @media screen and (max-width: 480px) {
-  .l-wrapper .l-header__inner .c-heading {
+  .l-wrapper .l-header .c-heading {
+    top: 8%;
     width: 50%;
-    margin-top: 12%;
   }
 }
-.l-wrapper .l-header__inner .c-heading .c-header__title {
-  font-size: 2.2em;
+.l-wrapper .l-header .c-heading .c-header__title {
+  font-size: 2.4em;
   font-weight: 200;
   line-height: 2em;
   letter-spacing: 0.3em;
 }
 @media screen and (max-width: 1024px) {
-  .l-wrapper .l-header__inner .c-heading .c-header__title {
-    font-size: 1.65em;
+  .l-wrapper .l-header .c-heading .c-header__title {
+    font-size: 1.95em;
     letter-spacing: 0.25em;
   }
 }
 @media screen and (max-width: 768px) {
-  .l-wrapper .l-header__inner .c-heading .c-header__title {
-    font-size: 1.3em;
+  .l-wrapper .l-header .c-heading .c-header__title {
+    font-size: 1.55em;
   }
 }
 @media screen and (max-width: 610px) {
-  .l-wrapper .l-header__inner .c-heading .c-header__title {
-    font-size: 1em;
+  .l-wrapper .l-header .c-heading .c-header__title {
+    font-size: 1.2em;
   }
 }
 @media screen and (max-width: 480px) {
-  .l-wrapper .l-header__inner .c-heading .c-header__title {
+  .l-wrapper .l-header .c-heading .c-header__title {
     margin-left: 5px;
     font-size: 1.2em;
     letter-spacing: 0.24em;
     line-height: 1.8em;
   }
 }
+.l-wrapper .l-header__inner {
+  position: absolute;
+  top: 10%;
+  right: 6%;
+  width: 15%;
+  height: auto;
+  z-index: 1000;
+}
+@media screen and (max-width: 480px) {
+  .l-wrapper .l-header__inner {
+    position: fixed;
+  }
+}
 @media screen and (max-width: 480px) {
   .l-wrapper .l-header__inner #p-drawer_toggle {
     position: fixed;
-    right: 8px;
-    top: 30px;
+    right: 11px;
+    top: 40px;
     width: 50px;
     height: 50px;
     cursor: pointer;
@@ -160,10 +165,6 @@
 }
 .l-wrapper .l-header__inner #p-drawer_toggle.open .c-hamburger_borderBottom {
   transform: rotate(-45deg);
-}
-.l-wrapper .l-header__inner .p-header__nav {
-  width: 20%;
-  margin: 5%;
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-header__inner .p-header__nav {
