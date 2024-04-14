@@ -79,6 +79,5 @@ $(() => {
 
     handleMediaQueryChange(mediaQuery);
     mediaQuery.addListener(handleMediaQueryChange);
-
   });
 });

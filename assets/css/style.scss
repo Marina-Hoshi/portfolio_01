@@ -179,7 +179,6 @@ $xl: 1024px;
       }
 
     .p-header__nav{
-      // display: block;
       width: 20%;
       margin: 5%;
       @include sp {
@@ -234,7 +233,7 @@ $xl: 1024px;
 .l-main{
   height: 85%;
 
-  &__about{
+  #l-main__about{
     height: 50%;
       background-color: #F8F7ED;
   }
@@ -459,7 +458,7 @@ $xl: 1024px;
         }
       }
 
-  &__lineup{
+  #l-main__lineup{
     height: 25%;
     background-color: #F1F1E8;
   }
@@ -728,7 +727,7 @@ $xl: 1024px;
       }
     }
 
-  &__shop{
+  #l-main__shop{
     height: 15%;
     background-color: #FFFFFF;
   }
@@ -884,7 +883,7 @@ $xl: 1024px;
       }
     }
 
-  &__news{
+  #l-main__news{
     height: 10%;
     background-color: #F1F1E8;
   }
@@ -1068,12 +1067,11 @@ $xl: 1024px;
     }
   }
 
-
 .l-footer{
   height: 5%;
   background-color: #FFFFFF;
 
-  &__container{
+  #l-footer__container{
     width: 60%;
     height: 70%;
     margin: 0 auto;
