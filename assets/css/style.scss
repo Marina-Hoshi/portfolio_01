@@ -137,7 +137,7 @@ $xl: 1024px;
     #p-drawer_toggle {
       @include sp {
         position: fixed;
-        right: 11px;
+        right: 9px;
         top: 40px;
         width: 50px;
         height: 50px;
@@ -190,7 +190,7 @@ $xl: 1024px;
         width: 40%;
         max-width: 45%;
         margin: 0%;
-        background: #F8F7ED;
+        background: #f7f4d0;
         opacity: 0.8;
       }
 
@@ -338,7 +338,7 @@ $xl: 1024px;
               padding: 4.5%;
             }
             @include sp {
-              padding: 10%;
+              padding: 10.5%;
             }
 
             .p-about__title{
