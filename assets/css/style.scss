@@ -179,11 +179,11 @@ $xl: 1024px;
       }
 
     .p-header__nav{
+      // display: block;
       width: 20%;
       margin: 5%;
       @include sp {
         position: fixed;
-        // display: none;
         top: 0;
         right: 0;
         z-index: 99;

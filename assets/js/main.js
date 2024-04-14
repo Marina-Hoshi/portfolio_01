@@ -1,9 +1,6 @@
 $(() => {
   const fadeInPage = () => {
     $('body').fadeIn(1000);
-
-  const $hamburgerMenu = $('.p-hamburger');
-  $hamburgerMenu.fadeIn(1000);
   };
 
   fadeInPage();
@@ -66,8 +63,22 @@ $(() => {
 
   $(function(){
     $("#p-drawer_toggle").click(function(){
-    	$(this).toggleClass("open");
-    	$(".p-header__nav").fadeToggle();
+      $(this).toggleClass("open");
+      $(".p-header__nav").fadeToggle();
     });
+
+    $("#p-drawer_toggle").removeClass("open");
+
+    const mediaQuery = window.matchMedia('(max-width: 480px)');
+
+    const handleMediaQueryChange = (mediaQuery) => {
+      if (mediaQuery.matches) {
+        $(".p-header__nav").hide();
+      }
+    };
+
+    handleMediaQueryChange(mediaQuery);
+    mediaQuery.addListener(handleMediaQueryChange);
+
   });
 });
