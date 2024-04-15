@@ -217,14 +217,14 @@ $xl: 1024px;
         }
         @include sp {
           font-size: 0.95em;
-          line-height: 3.25em;
+          line-height: 3.3em;
           letter-spacing: 0.25em;
         }
       }
 
       .c-nav__menu:first-child {
         @include sp {
-          padding-top: 35px;
+          padding-top: 32px;
         }
       }
     }
