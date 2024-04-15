@@ -187,8 +187,8 @@ $xl: 1024px;
         top: 0;
         right: 0;
         z-index: 99;
-        width: 40%;
-        max-width: 45%;
+        width: 45%;
+        height: 55%;
         margin: 0%;
         background: #f7f4d0;
         opacity: 0.8;
@@ -224,7 +224,7 @@ $xl: 1024px;
 
       .c-nav__menu:first-child {
         @include sp {
-          margin-top: 15px;
+          padding-top: 40px;
         }
       }
     }
