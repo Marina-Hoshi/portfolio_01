@@ -208,14 +208,14 @@
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-header__inner .p-header__nav .c-nav__menu {
-    font-size: 0.9em;
-    line-height: 3.2em;
-    letter-spacing: 0.2em;
+    font-size: 0.95em;
+    line-height: 3.25em;
+    letter-spacing: 0.25em;
   }
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-header__inner .p-header__nav .c-nav__menu:first-child {
-    padding-top: 40px;
+    padding-top: 35px;
   }
 }
 .l-wrapper .l-main {

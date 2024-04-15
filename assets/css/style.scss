@@ -216,15 +216,15 @@ $xl: 1024px;
           letter-spacing: 0.15em;
         }
         @include sp {
-          font-size: 0.9em;
-          line-height: 3.2em;
-          letter-spacing: 0.2em;
+          font-size: 0.95em;
+          line-height: 3.25em;
+          letter-spacing: 0.25em;
         }
       }
 
       .c-nav__menu:first-child {
         @include sp {
-          padding-top: 40px;
+          padding-top: 35px;
         }
       }
     }
