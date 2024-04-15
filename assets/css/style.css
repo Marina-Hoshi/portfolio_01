@@ -173,7 +173,6 @@
     right: 0;
     z-index: 99;
     width: 45%;
-    height: 55%;
     margin: 0%;
     background: #f7f4d0;
     opacity: 0.8;
@@ -181,7 +180,7 @@
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-header__inner .p-header__nav .p-nav__menu {
-    margin: 45% 15%;
+    margin: 30% 15%;
   }
 }
 .l-wrapper .l-header__inner .p-header__nav .c-nav__menu {
@@ -215,7 +214,7 @@
 }
 @media screen and (max-width: 480px) {
   .l-wrapper .l-header__inner .p-header__nav .c-nav__menu:first-child {
-    padding-top: 32px;
+    padding-top: 55px;
   }
 }
 .l-wrapper .l-main {
