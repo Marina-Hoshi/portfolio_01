@@ -304,6 +304,8 @@
   display: block;
   width: 100%;
   aspect-ratio: 3/2;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .l-wrapper .l-main__aboutMiddle .p-about__content .p-about__img:nth-of-type(2) {
   margin-left: auto;
